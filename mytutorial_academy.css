@@ -1,0 +1,264 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding:1px 0;
+	background:lightblue;
+	text-transform:uppercase;
+}
+
+.navbar ul.nav{
+	margin-right: 5%;
+}
+
+.navbar ul.nav li a{
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: blue;
+}
+
+.active,.nav-item:hover {
+	background: #9FE2BF;
+	color: white;
+}
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #f1f1f1;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url("https://mk0tiptopbrainjs8r5q.kinstacdn.com/wp-content/uploads/2020/11/virtual-tutoring-student-doing-online-learning.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('https://i.pinimg.com/736x/a8/1a/f1/a81af10217d0970f6c9d92db6fe9c88a.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: blue;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 4em;
+	font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: red;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item button:hover{
+	 border: 1px solid #ff7c57;
+    color: #fff;
+    background-color: #ff7c57
+}
+
+
+.card_detail{
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+	height:250px;
+	
+}
+
+.card_detail:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  background:#fffff0;
+}
+.card_detail:hover p{
+	color:blue;
+	font-weight:light;
+}
+.card_detail h4{
+	text-align:center;
+}
+.card_detail:hover h4{
+	color:red;
+	font-weight:bold;
+	
+}
+
+.card_detail img{
+	width:40px;
+	height:40px;
+	margin: auto;
+	display:block;
+	padding-top:1px;
+}
+
+.image_gallary {
+    display: grid;
+    place-items: center;
+    height:100%;
+}
+
+.image_gallary .image {
+    border: 2px solid #fff;
+    width: 100%;
+    height: 184px;
+    overflow: hidden
+}
+
+.image_gallary .image img {
+    width: 100%;
+    height: 300;
+    transition: all 2s ease-in-out
+}
+
+.image_gallary .image:hover img {
+    transform: scale(2, 2);
+    cursor: pointer
+}
+.card-header{
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.card-header h4{
+	text-align:center;
+}
+.card-header:hover {
+    background-color: #DE2E2E;
+    color: #fff	
+}
+.card-body .amount_detail:hover button:hover {
+    border: 1px solid #ff7c57;
+    color: #fff;
+    background-color: #ff7c57
+
+}
+.card-body .amount_detail:hover button {
+    border: 1px solid #ff7c57;
+    color: #ff7c57;
+    background-color: #fff;
+}
+
+.card-body .amount_detail ul li{
+	
+    color: #a7a7a7
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out 0s;
+	cursor:pointer;
+}
+
+
+.card-body .amount_detail ul li span {
+    color: #414141
+}
+.card-body .amount_detail ul {
+    list-style: none;
+    padding: 2px;
+    margin: 2px;
+	position:relative;
+}
+.card-body .amount_detail ul li:hover {
+    background-color: #E4E4E4;
+
+      transition: all 0.3s ease-in-out 0s;
+
+}
+
+.title h1{
+	text-align:center;
+	color:#DC143C;
+}
+.counter-item4 {
+    text-align: center;
+    padding: 35px 20px;
+    background: #eee;
+}
+
+.more_detail {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+	overflow-x:hidden;
+	letter-spacing: 0.5px;
+}
+
+
+.image_topper{
+	margin-left:300px;
+}
+.image_topper img{
+	width:150px;
+	height:150px;
+}
+.appoint button:hover{
+    border: 1px solid #ff7c57;
+    color: #fff;
+    background-color: #ff7c57
+}
+
+.foot{
+background:#f0ffff;
+}	
+.foot ul{
+	
+    list-style: none;
+}
+.foot ul li{
+	margin-bottom:.5px;
+	
+}
+.foot ul li a{
+	color:gray;
+}
+
